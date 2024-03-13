@@ -1,0 +1,33 @@
+.flexContainer {
+    display: flex;
+    margin-top: 30px;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+div:nth-child(1){
+    background-color: red;
+}
+div:nth-child(2){
+    background-color: blue;
+}
+div:nth-child(3){
+    background-color: green;
+}
+div:nth-child(4){
+    background-color: yellow;
+}
+
+.flexItem {
+    width: 200px;
+    height: 50px;
+}
+
+.flexItem:first-child { /*2 + 1 + 1 + 1 = 5`. Eso es porque a el primer le ponemos `flex-shrink:2*/
+   flex-shrink: 2;
+}
+
+/*div:nth-child(1)*/
